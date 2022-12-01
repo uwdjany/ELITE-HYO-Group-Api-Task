@@ -4,10 +4,14 @@ import mongoose from "mongoose";
 
 const acronomySchema = new mongoose.Schema({
     name:{
-        type:String
+        type:String,
+        unique:true,
+        required:true
+
     },
     description:{
-        type:String
+        type:String,
+        // required:true
     }
 },{timestamps:true})
 
